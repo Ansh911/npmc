@@ -9,7 +9,8 @@ int main()
     data_B = data_B == 1 ? 1 : -1;
     cout << "Enter the size of chip code: ";
     cin >> size;
-    int chip_A[size],chip_B[size], encoded_A[size], encoded_B[size], c[size], decoded_A[size], decoded_B[size];
+    int chip_A[size], chip_B[size], encoded_A[size], encoded_B[size], c[size],
+        decoded_A[size], decoded_B[size];
     cout << "Enter the PN sequence number(chip code) for A:";
     for (int i = 0; i < size; i++)
         cin >> chip_A[i];
@@ -42,7 +43,8 @@ int main()
         cout << c[i] << " ";
     }
     cout << endl;
-    cout << "Encoded Successfully." << endl<< endl;
+    cout << "Encoded Successfully." << endl
+         << endl;
     sum = 0;
     cout << "Decoded data at A: ";
     for (int i = 0; i < size; i++)
